@@ -1,4 +1,4 @@
-# WebScanPro
+# DV-WebScanPro
 
 WebScanPro is a modular web vulnerability scanner built as part of the Infosys Springboard Internship.  
 The project is divided into milestones, each focusing on different aspects of building a security testing tool.
