@@ -1,0 +1,4 @@
+Week 4 focused on Cross-Site Scripting (XSS) testing. 
+We developed a script that injects XSS payloads into input fields and URL parameters. 
+The script checks for payload reflection in responses, helping us identify vulnerable points. 
+Testing was demonstrated on DVWA, showing how malicious scripts could be executed.
