@@ -22,7 +22,7 @@ XSS_PAYLOADS = [
 
 HEADERS = {"User-Agent": "WebScanPro-XSS-Tester"}
 OUTFILE = "week4_xss_results.json"
-INPUT_JSON = "crawler_output.json"  # change if your metadata filename is different
+INPUT_JSON = "crawler_output.json"  
 
 def load_metadata(path=INPUT_JSON):
     with open(path, "r") as f:
@@ -38,7 +38,6 @@ def build_bs4_form(form_details):
     inputs = form_details.get("inputs", []) or []
     form_html = f'<form action="{action}" method="{method}">'
     for inp in inputs:
-        # create simple input elements; if input is dict allow name/type
         if isinstance(inp, dict):
             name = inp.get("name") or ""
         else:
@@ -81,7 +80,6 @@ def test_xss_form(page_url, form, form_details):
 
             row["status_code"] = r.status_code
             body = r.text or ""
-            # simple heuristic: payload appears in response body
             row["reflected"] = payload in body
         except Exception as e:
             row["error"] = repr(e)
@@ -110,9 +108,7 @@ def main():
             page_results.extend(form_results)
         results_summary["pages"][page_url] = page_results
 
-    # Also, if you have meta["pages"] and want to test URL params, we could add that here later.
 
-    # Save results
     with open(OUTFILE, "w") as f:
         json.dump(results_summary, f, indent=2)
 
