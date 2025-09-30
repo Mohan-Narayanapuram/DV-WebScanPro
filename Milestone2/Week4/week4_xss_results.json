@@ -1,0 +1,52 @@
+{
+  "tested_on": "from crawler_output.json",
+  "pages": {
+    "http://localhost:8080": [
+      {
+        "target_page": "http://localhost:8080",
+        "form_action": "login.php",
+        "form_method": "post",
+        "input_names": [
+          "username",
+          "password",
+          "Login",
+          "user_token"
+        ],
+        "payload": "<script>alert(1)</script>",
+        "status_code": 200,
+        "reflected": false,
+        "error": null
+      },
+      {
+        "target_page": "http://localhost:8080",
+        "form_action": "login.php",
+        "form_method": "post",
+        "input_names": [
+          "username",
+          "password",
+          "Login",
+          "user_token"
+        ],
+        "payload": "\"><img src=x onerror=alert(1)>",
+        "status_code": 200,
+        "reflected": false,
+        "error": null
+      },
+      {
+        "target_page": "http://localhost:8080",
+        "form_action": "login.php",
+        "form_method": "post",
+        "input_names": [
+          "username",
+          "password",
+          "Login",
+          "user_token"
+        ],
+        "payload": "<svg onload=alert(1)>",
+        "status_code": 200,
+        "reflected": false,
+        "error": null
+      }
+    ]
+  }
+}
