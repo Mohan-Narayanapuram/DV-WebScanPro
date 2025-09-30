@@ -1,0 +1,4 @@
+Week 3 focused on SQL Injection testing. 
+We developed a script that automatically injects SQL payloads into input fields and URL parameters. 
+The script analyzes responses for errors or unusual patterns that indicate vulnerabilities. 
+Testing was conducted on DVWA, where potential injection points were detected.
