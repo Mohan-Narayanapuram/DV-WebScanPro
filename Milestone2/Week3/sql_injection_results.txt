@@ -1,0 +1,25 @@
+{
+    "url": "http://localhost:8080",
+    "forms": [
+        {
+            "form_number": 1,
+            "action": "login.php",
+            "method": "post",
+            "inputs": [
+                "username",
+                "password",
+                "Login",
+                "user_token"
+            ],
+            "payloads_tested": [
+                "' OR '1'='1",
+                "' OR '1'='2",
+                "\" OR \"1\"=\"1",
+                "' UNION SELECT NULL--",
+                "' OR 'a'='a"
+            ],
+            "vulnerable": false
+        }
+    ],
+    "vulnerable": false
+}
