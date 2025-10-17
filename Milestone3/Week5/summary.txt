@@ -1,0 +1,5 @@
+Week 5 introduced miscellaneous security checks.  
+The module scanned for common sensitive files (e.g., config.php, robots.txt)  
+and checked for missing security headers.  
+Testing on DVWA identified accessible files and missing headers,  
+highlighting misconfigurations and weak security practices.
