@@ -1,0 +1,4 @@
+Week 6 focused on Insecure Direct Object Reference (IDOR) and access control testing.  
+The module attempted to access unauthorized resources by manipulating URL parameters.  
+On DVWA, profile endpoints were tested to simulate privilege escalation attempts.  
+Findings highlighted potential access control weaknesses.
