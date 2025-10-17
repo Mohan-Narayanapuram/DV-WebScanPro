@@ -1,0 +1,66 @@
+[
+  {
+    "type": "Sensitive File",
+    "endpoint": "http://localhost:8080/phpinfo.php",
+    "param": "-",
+    "payload": "phpinfo.php",
+    "evidence": "HTTP 200",
+    "severity": "Medium"
+  },
+  {
+    "type": "Sensitive File",
+    "endpoint": "http://localhost:8080/robots.txt",
+    "param": "-",
+    "payload": "robots.txt",
+    "evidence": "HTTP 200",
+    "severity": "Medium"
+  },
+  {
+    "type": "Missing Security Header",
+    "endpoint": "http://localhost:8080",
+    "param": "Content-Security-Policy",
+    "payload": "-",
+    "evidence": "Content-Security-Policy not present",
+    "severity": "Low"
+  },
+  {
+    "type": "Missing Security Header",
+    "endpoint": "http://localhost:8080",
+    "param": "X-Content-Type-Options",
+    "payload": "-",
+    "evidence": "X-Content-Type-Options not present",
+    "severity": "Low"
+  },
+  {
+    "type": "Missing Security Header",
+    "endpoint": "http://localhost:8080",
+    "param": "X-Frame-Options",
+    "payload": "-",
+    "evidence": "X-Frame-Options not present",
+    "severity": "Low"
+  },
+  {
+    "type": "Missing Security Header",
+    "endpoint": "http://localhost:8080",
+    "param": "Strict-Transport-Security",
+    "payload": "-",
+    "evidence": "Strict-Transport-Security not present",
+    "severity": "Low"
+  },
+  {
+    "type": "Missing Security Header",
+    "endpoint": "http://localhost:8080",
+    "param": "Referrer-Policy",
+    "payload": "-",
+    "evidence": "Referrer-Policy not present",
+    "severity": "Low"
+  },
+  {
+    "type": "Missing Security Header",
+    "endpoint": "http://localhost:8080",
+    "param": "Permissions-Policy",
+    "payload": "-",
+    "evidence": "Permissions-Policy not present",
+    "severity": "Low"
+  }
+]

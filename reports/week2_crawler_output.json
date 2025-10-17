@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "http://localhost:8080"
+  ],
+  "forms": {
+    "http://localhost:8080": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          "username",
+          "password",
+          "Login",
+          "user_token"
+        ]
+      }
+    ]
+  }
+}
