@@ -1,0 +1,5 @@
+Week 7 focused on building an automated report generator.  
+We created an HTML report template using Jinja2,  
+with severity color coding and charts for vulnerability distribution.  
+The report aggregates results from SQLi, XSS, Misc, and IDOR modules into a single file.  
+Testing confirmed that reports were generated successfully and could be viewed in a browser.
