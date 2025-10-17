@@ -1,0 +1,5 @@
+Week 8 focused on building a user-friendly Flask web interface.  
+The frontend allows users to input targets, run scans, and view/download reports.  
+Templates were created for the home and results pages.  
+Dockerization ensured the project can run consistently across environments.  
+Testing confirmed full functionality of the end-to-end system.
